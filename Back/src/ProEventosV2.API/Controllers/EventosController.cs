@@ -36,6 +36,7 @@ public class EventosController : ControllerBase
     [HttpPut("{id}")]
     public string Put(int id)
     {
+        context.Eventos.FirstOrDefault(evento => evento);
         return $"http put method exemple com id = {id}";
     }
 
